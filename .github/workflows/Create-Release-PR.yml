@@ -34,6 +34,7 @@ jobs:
       run: | 
         sed -i -e  's/spec.version = ".*"/spec.version = "${{ inputs.new_version }}"/' OpenTelemetry-Swift-Api.podspec
         sed -i -e  's/spec.version = ".*"/spec.version = "${{ inputs.new_version }}"/' OpenTelemetry-Swift-Sdk.podspec
+        sed -i -e  's/spec.version = ".*"/spec.version = "${{ inputs.new_version }}"/' OpenTelemetry-Swift-StdoutExporter.podspec
 
 
     - name: Create Pull Request
